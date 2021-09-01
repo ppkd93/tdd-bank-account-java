@@ -10,13 +10,13 @@ public class AccountTest {
     @Test
     public void checkDepositIsNull() {
         Account account = new Account();
-        assertThat(account.balance).isEqualTo(0);
+        assertThat(account.getBalance()).isEqualTo(0);
     }
 
     @Test
     public void depositAnAmountToIncreaseTheBalance() {
         Account account = new Account();
         account.deposit(10);
-        assertThat(account.balance).isEqualTo(10);
+        assertThat(account.getBalance()).isEqualTo(10);
     }
 }
